@@ -1,0 +1,749 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Generated schema for Root",
+  "type": "object",
+  "properties": {
+    "buttons": {
+      "type": "array",
+      "items": {}
+    },
+    "data": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "PDF-_equity": {
+            "type": "string"
+          },
+          "branch_reference_code": {
+            "type": "string"
+          },
+          "clientimage": {
+            "type": "string"
+          },
+          "current_module": {
+            "type": "string"
+          },
+          "current_stepname": {
+            "type": "string"
+          },
+          "design_test_module_timestamp": {
+            "type": "string"
+          },
+          "do_you_need_relationship_manager_": {
+            "type": "string"
+          },
+          "dob": {
+            "type": "string"
+          },
+          "document-1225_hash": {
+            "type": "string"
+          },
+          "document-1225_link": {
+            "type": "string"
+          },
+          "email": {
+            "type": "string"
+          },
+          "email_otp": {
+            "type": "string"
+          },
+          "email_otp_count": {
+            "type": "number"
+          },
+          "email_otp_time": {
+            "type": "string"
+          },
+          "email_otp_verify_count": {
+            "type": "number"
+          },
+          "email_timestamp": {
+            "type": "string"
+          },
+          "entry_type": {
+            "type": "string"
+          },
+          "face_match_percentage": {
+            "type": "string"
+          },
+          "face_match_threshold": {
+            "type": "string"
+          },
+          "faces_matched": {
+            "type": "string"
+          },
+          "fields": {
+            "type": "string"
+          },
+          "from_previous": {
+            "type": "string"
+          },
+          "from_previous_position": {
+            "type": "string"
+          },
+          "future_position": {
+            "type": "string"
+          },
+          "id": {
+            "type": "number"
+          },
+          "identity": {
+            "type": "string"
+          },
+          "image_to_be_matched": {
+            "type": "string"
+          },
+          "ipv_transaction_id": {
+            "type": "string"
+          },
+          "jhvmnbn": {
+            "type": "string"
+          },
+          "latitude": {
+            "type": "string"
+          },
+          "liveimage_timestamp": {
+            "type": "string"
+          },
+          "livevideo": {
+            "type": "string"
+          },
+          "location": {
+            "type": "string"
+          },
+          "longitude": {
+            "type": "string"
+          },
+          "mobile_number": {
+            "type": "string"
+          },
+          "mobile_otp": {
+            "type": "string"
+          },
+          "mobile_otp_count": {
+            "type": "number"
+          },
+          "mobile_otp_time": {
+            "type": "string"
+          },
+          "mobile_otp_timestamp": {
+            "type": "string"
+          },
+          "mobile_otp_verify_count": {
+            "type": "number"
+          },
+          "mobile_timestamp": {
+            "type": "string"
+          },
+          "newmodule_timestamp": {
+            "type": "string"
+          },
+          "nousefield": {
+            "type": "string"
+          },
+          "nousefield2": {
+            "type": "string"
+          },
+          "nousefield3": {
+            "type": "string"
+          },
+          "nousefield4": {
+            "type": "string"
+          },
+          "otp": {
+            "type": "string"
+          },
+          "pan_number": {
+            "type": "string"
+          },
+          "pan_timestamp": {
+            "type": "string"
+          },
+          "pdf_timestamp": {
+            "type": "string"
+          },
+          "position": {
+            "type": "number"
+          },
+          "review_edit": {
+            "type": "string"
+          },
+          "stage": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string"
+          },
+          "updated_at": {
+            "type": "string"
+          },
+          "workflowName": {
+            "type": "string"
+          },
+          "workflow_key": {
+            "type": "string"
+          },
+          "mobile1_timestamp": {
+            "type": "string"
+          },
+          "aadhar_address": {
+            "type": "string"
+          },
+          "aadhar_country": {
+            "type": "string"
+          },
+          "aadhar_dist": {
+            "type": "string"
+          },
+          "aadhar_dob": {
+            "type": "string"
+          },
+          "aadhar_fathername": {
+            "type": "string"
+          },
+          "aadhar_file": {
+            "type": "string"
+          },
+          "aadhar_gender": {
+            "type": "string"
+          },
+          "aadhar_house": {
+            "type": "string"
+          },
+          "aadhar_image": {
+            "type": "string"
+          },
+          "aadhar_name": {
+            "type": "string"
+          },
+          "aadhar_name_and_dob_verify": {
+            "type": "string"
+          },
+          "aadhar_no": {
+            "type": "string"
+          },
+          "aadhar_pincode": {
+            "type": "string"
+          },
+          "aadhar_state": {
+            "type": "string"
+          },
+          "aadhar_xml": {
+            "type": "string"
+          },
+          "adharimg": {
+            "type": "string"
+          },
+          "bse_commodity": {},
+          "clienttoken": {
+            "type": "string"
+          },
+          "digilocker7": {
+            "type": "string"
+          },
+          "digilocker7_timestamp": {
+            "type": "string"
+          },
+          "digilocker_timestamp": {
+            "type": "string"
+          },
+          "digitrans": {
+            "type": "string"
+          },
+          "email3_timestamp": {
+            "type": "string"
+          },
+          "email_otp4_timestamp": {
+            "type": "string"
+          },
+          "email_otp_timestamp": {
+            "type": "string"
+          },
+          "equity": {},
+          "locality": {
+            "type": "string"
+          },
+          "mobile_otp2_timestamp": {
+            "type": "string"
+          },
+          "monthly": {
+            "type": "string"
+          },
+          "nse_commodity": {},
+          "pan5_timestamp": {
+            "type": "string"
+          },
+          "pan_from_digilocker": {
+            "type": "string"
+          },
+          "pan_status": {
+            "type": "string"
+          },
+          "segments6_timestamp": {
+            "type": "string"
+          },
+          "segments_timestamp": {
+            "type": "string"
+          },
+          "uploadPAN": {
+            "type": "string"
+          },
+          "ipv_access_token": {
+            "type": "string"
+          },
+          "KRA": {
+            "type": "object",
+            "properties": {
+              "AADHAR_NO": {
+                "type": "string"
+              },
+              "COR_ADD1": {
+                "type": "string"
+              },
+              "COR_ADD2": {
+                "type": "string"
+              },
+              "COR_ADD3": {
+                "type": "string"
+              },
+              "COR_CITY": {
+                "type": "string"
+              },
+              "COR_PINCD": {
+                "type": "string"
+              },
+              "COR_STATE": {
+                "type": "string"
+              },
+              "FATHER_NAME": {
+                "type": "string"
+              },
+              "GENDER": {
+                "type": "string"
+              },
+              "PER_ADD1": {
+                "type": "string"
+              },
+              "PER_ADD2": {
+                "type": "string"
+              },
+              "PER_ADD3": {
+                "type": "string"
+              },
+              "PER_CITY": {
+                "type": "string"
+              },
+              "PER_PINCD": {
+                "type": "string"
+              },
+              "PER_STATE": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "AADHAR_NO",
+              "COR_ADD1",
+              "COR_ADD2",
+              "COR_ADD3",
+              "COR_CITY",
+              "COR_PINCD",
+              "COR_STATE",
+              "FATHER_NAME",
+              "GENDER",
+              "PER_ADD1",
+              "PER_ADD2",
+              "PER_ADD3",
+              "PER_CITY",
+              "PER_PINCD",
+              "PER_STATE"
+            ]
+          },
+          "aadhar_seeding_status": {
+            "type": "string"
+          },
+          "account_number": {
+            "type": "string"
+          },
+          "account_type": {
+            "type": "string"
+          },
+          "add_2_nominee": {
+            "type": "string"
+          },
+          "add_3_nominee": {
+            "type": "string"
+          },
+          "add_nominee": {
+            "type": "string"
+          },
+          "annual_income": {
+            "type": "string"
+          },
+          "bank_address": {
+            "type": "string"
+          },
+          "bank_timestamp": {
+            "type": "string"
+          },
+          "bank_upload_timestamp": {
+            "type": "string"
+          },
+          "digital_signature": {
+            "type": "string"
+          },
+          "document-1225_done": {
+            "type": "string"
+          },
+          "education": {
+            "type": "string"
+          },
+          "esign_timestamp": {
+            "type": "string"
+          },
+          "father_name": {
+            "type": "string"
+          },
+          "gender": {
+            "type": "string"
+          },
+          "guardian1_add1": {
+            "type": "string"
+          },
+          "guardian1_city": {
+            "type": "string"
+          },
+          "guardian1_country": {
+            "type": "string"
+          },
+          "guardian1_dob": {
+            "type": "string"
+          },
+          "guardian1_email": {
+            "type": "string"
+          },
+          "guardian1_id_proof": {
+            "type": "string"
+          },
+          "guardian1_identification": {
+            "type": "string"
+          },
+          "guardian1_mobile": {
+            "type": "string"
+          },
+          "guardian1_name": {
+            "type": "string"
+          },
+          "guardian1_pan": {
+            "type": "string"
+          },
+          "guardian1_pincode": {
+            "type": "string"
+          },
+          "guardian1_relation": {
+            "type": "string"
+          },
+          "guardian1_state": {
+            "type": "string"
+          },
+          "guardian2_add1": {
+            "type": "string"
+          },
+          "guardian2_city": {
+            "type": "string"
+          },
+          "guardian2_country": {
+            "type": "string"
+          },
+          "guardian2_dob": {
+            "type": "string"
+          },
+          "guardian2_email": {
+            "type": "string"
+          },
+          "guardian2_identification": {
+            "type": "string"
+          },
+          "guardian2_mobile": {
+            "type": "string"
+          },
+          "guardian2_name": {
+            "type": "string"
+          },
+          "guardian2_pan": {
+            "type": "string"
+          },
+          "guardian2_pincode": {
+            "type": "string"
+          },
+          "guardian2_relation": {
+            "type": "string"
+          },
+          "guardian2_select_id_proof": {
+            "type": "string"
+          },
+          "guardian2_state": {
+            "type": "string"
+          },
+          "guardian3_add1": {
+            "type": "string"
+          },
+          "guardian3_city": {
+            "type": "string"
+          },
+          "guardian3_country": {
+            "type": "string"
+          },
+          "guardian3_dob": {
+            "type": "string"
+          },
+          "guardian3_email": {
+            "type": "string"
+          },
+          "guardian3_identification": {
+            "type": "string"
+          },
+          "guardian3_mobile": {
+            "type": "string"
+          },
+          "guardian3_name": {
+            "type": "string"
+          },
+          "guardian3_pan": {
+            "type": "string"
+          },
+          "guardian3_pincode": {
+            "type": "string"
+          },
+          "guardian3_relation": {
+            "type": "string"
+          },
+          "guardian3_select_any_id_proof": {
+            "type": "string"
+          },
+          "guardian3_state": {
+            "type": "string"
+          },
+          "ifsc": {
+            "type": "string"
+          },
+          "income_proof": {
+            "type": "string"
+          },
+          "income_proof_timestamp": {
+            "type": "string"
+          },
+          "marital_status": {
+            "type": "string"
+          },
+          "micr1": {
+            "type": "string"
+          },
+          "mother_name": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "nominee1_add1": {
+            "type": "string"
+          },
+          "nominee1_add2": {
+            "type": "string"
+          },
+          "nominee1_country": {
+            "type": "string"
+          },
+          "nominee1_dob": {
+            "type": "string"
+          },
+          "nominee1_email": {
+            "type": "string"
+          },
+          "nominee1_id_proof": {
+            "type": "string"
+          },
+          "nominee1_mobile": {
+            "type": "string"
+          },
+          "nominee1_name": {
+            "type": "string"
+          },
+          "nominee1_pan": {
+            "type": "string"
+          },
+          "nominee1_pan_upload": {
+            "type": "string"
+          },
+          "nominee1_pincode": {
+            "type": "string"
+          },
+          "nominee1_relation": {
+            "type": "string"
+          },
+          "nominee1_state": {
+            "type": "string"
+          },
+          "nominee2_add1": {
+            "type": "string"
+          },
+          "nominee2_add2": {
+            "type": "string"
+          },
+          "nominee2_country": {
+            "type": "string"
+          },
+          "nominee2_dob": {
+            "type": "string"
+          },
+          "nominee2_email": {
+            "type": "string"
+          },
+          "nominee2_mobile": {
+            "type": "string"
+          },
+          "nominee2_name": {
+            "type": "string"
+          },
+          "nominee2_pan": {
+            "type": "string"
+          },
+          "nominee2_pan_upload": {
+            "type": "string"
+          },
+          "nominee2_pincode": {
+            "type": "string"
+          },
+          "nominee2_relation": {
+            "type": "string"
+          },
+          "nominee2_state": {
+            "type": "string"
+          },
+          "nominee3_add1": {
+            "type": "string"
+          },
+          "nominee3_add2": {
+            "type": "string"
+          },
+          "nominee3_city": {
+            "type": "string"
+          },
+          "nominee3_country": {
+            "type": "string"
+          },
+          "nominee3_dob": {
+            "type": "string"
+          },
+          "nominee3_email": {
+            "type": "string"
+          },
+          "nominee3_mobile": {
+            "type": "string"
+          },
+          "nominee3_name": {
+            "type": "string"
+          },
+          "nominee3_pan": {
+            "type": "string"
+          },
+          "nominee3_pan_upload": {
+            "type": "string"
+          },
+          "nominee3_percentage": {
+            "type": "string"
+          },
+          "nominee3_pincode": {
+            "type": "string"
+          },
+          "nominee3_relation": {
+            "type": "string"
+          },
+          "nominee3_select_any_id_proof": {
+            "type": "string"
+          },
+          "nominee3_state": {
+            "type": "string"
+          },
+          "nominee_1_city": {
+            "type": "string"
+          },
+          "nominee_1_percentage": {
+            "type": "string"
+          },
+          "nominee_2_city": {
+            "type": "string"
+          },
+          "nominee_2_percentage": {
+            "type": "string"
+          },
+          "nominee_2_select_any_id_proof": {
+            "type": "string"
+          },
+          "nominee_timestamp": {
+            "type": "string"
+          },
+          "occupation": {
+            "type": "string"
+          },
+          "pan_upload": {
+            "type": "string"
+          },
+          "pan_upload_timestamp": {
+            "type": "string"
+          },
+          "personal_details_timestamp": {
+            "type": "string"
+          },
+          "politically_exposed": {
+            "type": "string"
+          },
+          "reenter_account_number": {
+            "type": "string"
+          },
+          "sign_upload_timestamp": {
+            "type": "string"
+          },
+          "signature_upload": {
+            "type": "string"
+          },
+          "spouse_name": {
+            "type": "string"
+          },
+          "trading_experience": {
+            "type": "string"
+          },
+          "upload_bank_proof": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "id",
+          "identity",
+          "mobile_number",
+          "mobile_otp",
+          "mobile_otp_time",
+          "position",
+          "stage",
+          "updated_at",
+          "workflowName",
+          "workflow_key",
+          "bse_commodity",
+          "equity",
+          "nse_commodity"
+        ]
+      }
+    },
+    "total_counts": {
+      "type": "number"
+    },
+    "total_pages": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "buttons",
+    "data",
+    "total_counts",
+    "total_pages"
+  ]
+}

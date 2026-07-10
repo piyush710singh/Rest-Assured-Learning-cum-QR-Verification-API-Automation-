@@ -1,0 +1,60 @@
+2026-07-09 18:48:47.636 [main] INFO  o.t.i.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 3 ms.
+2026-07-09 18:48:47.671 [main] INFO  o.t.i.Utils - [Utils] MethodGroupsHelper.sortMethods() took 5 ms.
+2026-07-09 18:48:47.675 [main] INFO  o.t.i.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2026-07-09 18:48:47.676 [main] INFO  o.t.i.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2026-07-09 18:48:47.677 [main] INFO  o.t.i.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2026-07-09 18:48:47.678 [main] INFO  o.t.i.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2026-07-09 18:48:47.680 [main] INFO  o.t.i.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2026-07-09 18:48:47.680 [main] INFO  o.t.i.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2026-07-09 18:48:47.682 [main] INFO  o.t.i.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2026-07-09 18:48:47.683 [main] INFO  o.t.i.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2026-07-09 18:48:47.685 [main] INFO  o.t.i.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2026-07-09 18:48:47.686 [main] INFO  o.t.i.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2026-07-09 18:48:47.687 [main] INFO  o.t.i.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2026-07-09 18:48:47.688 [main] INFO  o.t.i.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2026-07-09 18:48:47.689 [main] INFO  o.t.i.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2026-07-09 18:48:47.690 [main] INFO  o.t.i.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2026-07-09 18:48:47.694 [main] INFO  o.t.i.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2026-07-09 18:48:47.695 [main] INFO  o.t.i.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2026-07-09 18:48:47.696 [main] INFO  o.t.i.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2026-07-09 18:48:47.697 [main] INFO  o.t.i.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2026-07-09 18:48:47.711 [main] INFO  o.t.i.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2026-07-09 18:48:47.711 [main] INFO  o.t.i.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2026-07-09 18:48:47.712 [main] INFO  o.t.i.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2026-07-09 18:48:47.714 [main] INFO  o.t.i.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2026-07-09 18:48:47.716 [main] INFO  o.t.i.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2026-07-09 18:48:47.717 [main] INFO  o.t.i.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2026-07-09 18:48:47.719 [main] INFO  o.t.i.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2026-07-09 18:48:47.720 [main] INFO  o.t.i.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2026-07-09 18:48:47.747 [main] INFO  o.t.i.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 9 ms.
+2026-07-09 18:48:47.778 [main] INFO  o.t.i.Utils - [Utils] MethodGroupsHelper.sortMethods() took 29 ms.
+2026-07-09 18:48:47.780 [main] INFO  o.t.i.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2026-07-09 18:48:47.781 [main] INFO  o.t.i.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2026-07-09 18:48:47.782 [main] INFO  o.t.i.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2026-07-09 18:48:47.782 [main] INFO  o.t.i.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2026-07-09 18:48:47.784 [main] INFO  o.t.i.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2026-07-09 18:48:47.785 [main] INFO  o.t.i.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2026-07-09 18:48:47.786 [main] INFO  o.t.i.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2026-07-09 18:48:47.787 [main] INFO  o.t.i.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2026-07-09 18:48:47.788 [main] INFO  o.t.i.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2026-07-09 18:48:47.789 [main] INFO  o.t.i.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2026-07-09 18:48:47.797 [main] INFO  o.t.i.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2026-07-09 18:48:47.798 [main] INFO  o.t.i.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2026-07-09 18:48:47.798 [main] INFO  o.t.i.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2026-07-09 18:48:47.798 [main] INFO  o.t.i.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2026-07-09 18:48:47.801 [main] INFO  o.t.i.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 2 ms.
+2026-07-09 18:48:47.812 [main] INFO  o.t.i.Utils - [Utils] MethodGroupsHelper.sortMethods() took 10 ms.
+2026-07-09 18:48:47.815 [main] INFO  o.t.i.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2026-07-09 18:48:47.816 [main] INFO  o.t.i.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2026-07-09 18:48:47.816 [main] INFO  o.t.i.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2026-07-09 18:48:47.817 [main] INFO  o.t.i.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2026-07-09 18:48:47.861 [main] INFO  o.t.i.Utils - [Utils] DynamicGraphHelper.createDynamicGraph() took 10 ms.
+2026-07-09 19:09:41.304 [main] INFO  a.t.UserTest - ***********reading user
+2026-07-09 19:09:41.392 [main] INFO  a.t.UserTest - ***********updating user
+2026-07-09 19:09:41.524 [main] INFO  a.t.UserTest - ***********deleting user
+2026-07-09 19:09:41.972 [main] INFO  o.t.i.Utils - [TestNG] Time taken by org.testng.reporters.jq.Main@5c459194: 169 ms
+2026-07-09 19:09:42.022 [main] INFO  o.t.i.Utils - [TestNG] Time taken by org.testng.reporters.FailedReporter@7204d98f: 50 ms
+2026-07-09 19:09:42.067 [main] INFO  o.t.i.Utils - [TestNG] Time taken by org.testng.reporters.XMLReporter@cfc4601: 45 ms
+2026-07-09 19:09:42.099 [main] INFO  o.t.i.Utils - [TestNG] Time taken by org.testng.reporters.EmailableReporter2@451a4187: 32 ms
+2026-07-09 19:09:42.142 [main] INFO  o.t.i.Utils - [TestNG] Time taken by org.testng.reporters.JUnitReportReporter@4e26c308: 41 ms
+2026-07-09 19:09:42.148 [main] INFO  o.t.i.Utils - [TestNG] Time taken by org.testng.internal.ExitCodeListener@7c8f803d: 0 ms
