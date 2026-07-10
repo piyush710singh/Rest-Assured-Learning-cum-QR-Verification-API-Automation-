@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [All Test Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <test thread-count="5" name="C:/Users/piyus/IdeaProjects/RestAssuredLearning/src/test/java/api/test(failed)" verbose="0">
+    <classes>
+      <class name="api.test.UserTest">
+        <methods>
+          <include name="testDeleteUser"/>
+          <include name="testPostUser"/>
+          <include name="testGetUserbyName"/>
+          <include name="setupData"/>
+          <include name="testUpdateUserbyName"/>
+        </methods>
+      </class> <!-- api.test.UserTest -->
+      <class name="api.test.DDTests">
+        <methods>
+          <include name="testDeleteuser" invocation-numbers="3 4"/>
+        </methods>
+      </class> <!-- api.test.DDTests -->
+    </classes>
+  </test> <!-- C:/Users/piyus/IdeaProjects/RestAssuredLearning/src/test/java/api/test(failed) -->
+</suite> <!-- Failed suite [All Test Suite] -->

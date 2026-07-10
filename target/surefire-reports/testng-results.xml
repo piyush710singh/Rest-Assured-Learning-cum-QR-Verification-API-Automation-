@@ -1,0 +1,1068 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="14" passed="8" failed="6" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-07-09T18:48:47 IST" name="All Test Suite" finished-at="2026-07-09T19:09:41 IST" duration-ms="1253734">
+    <groups>
+    </groups>
+    <test started-at="2026-07-09T18:48:47 IST" name="C:/Users/piyus/IdeaProjects/RestAssuredLearning/src/test/java/api/test" finished-at="2026-07-09T19:09:41 IST" duration-ms="1253734">
+      <class name="api.test.UserTest">
+        <test-method is-config="true" signature="setupData()[pri:0, instance:api.test.UserTest@512baff6]" started-at="2026-07-09T19:09:39 IST" name="setupData" finished-at="2026-07-09T19:09:41 IST" duration-ms="1267" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupData -->
+        <test-method signature="testPostUser()[pri:1, instance:api.test.UserTest@512baff6]" started-at="2026-07-09T19:09:41 IST" name="testPostUser" finished-at="2026-07-09T19:09:41 IST" duration-ms="151" status="FAIL">
+          <exception class="java.net.UnknownHostException">
+            <message>
+              <![CDATA[petstore.swagger.io]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.net.UnknownHostException: petstore.swagger.io
+at java.base/java.net.InetAddress$CachedLookup.get(InetAddress.java:909)
+at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1702)
+at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1582)
+at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+at org.apache.http.impl.conn.DefaultClientConnectionOperator.resolveHostname(DefaultClientConnectionOperator.java:263)
+at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:162)
+at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:326)
+at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:605)
+at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:440)
+at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835)
+at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+at io.restassured.internal.RestAssuredHttpBuilder.doRequest(RestAssuredHttpBuilder.java:141)
+at io.restassured.internal.http.HTTPBuilder.post(HTTPBuilder.java:349)
+at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
+at io.restassured.internal.RequestSpecificationImpl.sendRequest(RequestSpecificationImpl.groovy:1296)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:338)
+at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:274)
+at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1240)
+at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1013)
+at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:798)
+at groovy.lang.GroovyObject.invokeMethod(GroovyObject.java:39)
+at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
+at io.restassured.internal.filter.SendRequestFilter.filter(SendRequestFilter.groovy:30)
+at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
+at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:73)
+at io.restassured.filter.time.TimingFilter.filter(TimingFilter.java:56)
+at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
+at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:73)
+at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
+at io.restassured.internal.filter.CsrfFilter.filter(CsrfFilter.groovy:89)
+at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
+at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:73)
+at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
+at io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1791)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:338)
+at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:274)
+at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1240)
+at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1013)
+at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:798)
+at groovy.lang.GroovyObject.invokeMethod(GroovyObject.java:39)
+at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
+at io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1797)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:338)
+at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:274)
+at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1240)
+at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1013)
+at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:798)
+at groovy.lang.GroovyObject.invokeMethod(GroovyObject.java:39)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:338)
+at org.codehaus.groovy.runtime.metaclass.TransformMetaMethod.invoke(TransformMetaMethod.java:59)
+at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass$1.invoke(ClosureMetaClass.java:217)
+at org.codehaus.groovy.runtime.metaclass.TransformMetaMethod.doMethodInvoke(TransformMetaMethod.java:66)
+at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:318)
+at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
+at io.restassured.internal.RequestSpecificationImpl$_post_closure2.doCall(RequestSpecificationImpl.groovy:180)
+at io.restassured.internal.RequestSpecificationImpl$_post_closure2.doCall(RequestSpecificationImpl.groovy)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:338)
+at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:274)
+at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:270)
+at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1013)
+at groovy.lang.Closure.call(Closure.java:471)
+at org.codehaus.groovy.runtime.ConvertedClosure.invokeCustom(ConvertedClosure.java:54)
+at org.codehaus.groovy.runtime.ConversionHandler.invoke(ConversionHandler.java:114)
+at jdk.proxy1/jdk.proxy1.$Proxy27.get(Unknown Source)
+at io.restassured.internal.assertbridge.GroovyAssertBridge.runWithUnwrap(GroovyAssertBridge.java:46)
+at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
+at io.restassured.internal.RequestSpecificationImpl.post(RequestSpecificationImpl.groovy:179)
+at io.restassured.internal.RequestSpecificationImpl.post(RequestSpecificationImpl.groovy)
+at api.endpoints.UserEndpoints.createUser(UserEndpoints.java:24)
+at api.test.UserTest.testPostUser(UserTest.java:37)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+at org.testng.TestRunner.privateRun(TestRunner.java:744)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.net.UnknownHostException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPostUser -->
+        <test-method signature="testGetUserbyName()[pri:2, instance:api.test.UserTest@512baff6]" started-at="2026-07-09T19:09:41 IST" name="testGetUserbyName" finished-at="2026-07-09T19:09:41 IST" duration-ms="74" status="FAIL">
+          <exception class="java.net.UnknownHostException">
+            <message>
+              <![CDATA[petstore.swagger.io]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.net.UnknownHostException: petstore.swagger.io
+at java.base/java.net.InetAddress$CachedLookup.get(InetAddress.java:909)
+at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1702)
+at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1582)
+at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+at org.apache.http.impl.conn.DefaultClientConnectionOperator.resolveHostname(DefaultClientConnectionOperator.java:263)
+at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:162)
+at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:326)
+at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:605)
+at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:440)
+at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835)
+at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+at io.restassured.internal.RestAssuredHttpBuilder.doRequest(RestAssuredHttpBuilder.java:141)
+at io.restassured.internal.http.HTTPBuilder.doRequest(HTTPBuilder.java:496)
+at io.restassured.internal.http.HTTPBuilder.request(HTTPBuilder.java:453)
+at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
+at io.restassured.internal.RequestSpecificationImpl.sendHttpRequest(RequestSpecificationImpl.groovy:1567)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:338)
+at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:274)
+at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1240)
+at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1013)
+at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:798)
+at groovy.lang.GroovyObject.invokeMethod(GroovyObject.java:39)
+at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
+at io.restassured.internal.RequestSpecificationImpl.sendRequest(RequestSpecificationImpl.groovy:1316)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:338)
+at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:274)
+at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1240)
+at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1013)
+at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:798)
+at groovy.lang.GroovyObject.invokeMethod(GroovyObject.java:39)
+at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
+at io.restassured.internal.filter.SendRequestFilter.filter(SendRequestFilter.groovy:30)
+at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
+at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:73)
+at io.restassured.filter.time.TimingFilter.filter(TimingFilter.java:56)
+at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
+at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:73)
+at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
+at io.restassured.internal.filter.CsrfFilter.filter(CsrfFilter.groovy:89)
+at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
+at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:73)
+at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
+at io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1791)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:338)
+at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:274)
+at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1240)
+at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1013)
+at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:798)
+at groovy.lang.GroovyObject.invokeMethod(GroovyObject.java:39)
+at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
+at io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1797)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:338)
+at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:274)
+at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1240)
+at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1013)
+at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:798)
+at groovy.lang.GroovyObject.invokeMethod(GroovyObject.java:39)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:338)
+at org.codehaus.groovy.runtime.metaclass.TransformMetaMethod.invoke(TransformMetaMethod.java:59)
+at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass$1.invoke(ClosureMetaClass.java:217)
+at org.codehaus.groovy.runtime.metaclass.TransformMetaMethod.doMethodInvoke(TransformMetaMethod.java:66)
+at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:318)
+at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
+at io.restassured.internal.RequestSpecificationImpl$_get_closure1.doCall(RequestSpecificationImpl.groovy:174)
+at io.restassured.internal.RequestSpecificationImpl$_get_closure1.doCall(RequestSpecificationImpl.groovy)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:338)
+at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:274)
+at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:270)
+at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1013)
+at groovy.lang.Closure.call(Closure.java:471)
+at org.codehaus.groovy.runtime.ConvertedClosure.invokeCustom(ConvertedClosure.java:54)
+at org.codehaus.groovy.runtime.ConversionHandler.invoke(ConversionHandler.java:114)
+at jdk.proxy1/jdk.proxy1.$Proxy27.get(Unknown Source)
+at io.restassured.internal.assertbridge.GroovyAssertBridge.runWithUnwrap(GroovyAssertBridge.java:46)
+at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
+at io.restassured.internal.RequestSpecificationImpl.get(RequestSpecificationImpl.groovy:173)
+at io.restassured.internal.RequestSpecificationImpl.get(RequestSpecificationImpl.groovy)
+at api.endpoints.UserEndpoints.readUser(UserEndpoints.java:34)
+at api.test.UserTest.testGetUserbyName(UserTest.java:49)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+at org.testng.TestRunner.privateRun(TestRunner.java:744)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.net.UnknownHostException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetUserbyName -->
+        <test-method signature="testUpdateUserbyName()[pri:3, instance:api.test.UserTest@512baff6]" started-at="2026-07-09T19:09:41 IST" name="testUpdateUserbyName" finished-at="2026-07-09T19:09:41 IST" duration-ms="125" status="FAIL">
+          <exception class="java.net.UnknownHostException">
+            <message>
+              <![CDATA[petstore.swagger.io]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.net.UnknownHostException: petstore.swagger.io
+at java.base/java.net.InetAddress$CachedLookup.get(InetAddress.java:909)
+at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1702)
+at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1582)
+at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+at org.apache.http.impl.conn.DefaultClientConnectionOperator.resolveHostname(DefaultClientConnectionOperator.java:263)
+at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:162)
+at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:326)
+at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:605)
+at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:440)
+at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835)
+at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+at io.restassured.internal.RestAssuredHttpBuilder.doRequest(RestAssuredHttpBuilder.java:141)
+at io.restassured.internal.http.HTTPBuilder.doRequest(HTTPBuilder.java:496)
+at io.restassured.internal.http.HTTPBuilder.request(HTTPBuilder.java:453)
+at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
+at io.restassured.internal.RequestSpecificationImpl.sendHttpRequest(RequestSpecificationImpl.groovy:1567)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:338)
+at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:274)
+at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1240)
+at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1013)
+at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:798)
+at groovy.lang.GroovyObject.invokeMethod(GroovyObject.java:39)
+at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
+at io.restassured.internal.RequestSpecificationImpl.sendRequest(RequestSpecificationImpl.groovy:1316)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:338)
+at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:274)
+at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1240)
+at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1013)
+at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:798)
+at groovy.lang.GroovyObject.invokeMethod(GroovyObject.java:39)
+at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
+at io.restassured.internal.filter.SendRequestFilter.filter(SendRequestFilter.groovy:30)
+at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
+at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:73)
+at io.restassured.filter.time.TimingFilter.filter(TimingFilter.java:56)
+at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
+at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:73)
+at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
+at io.restassured.internal.filter.CsrfFilter.filter(CsrfFilter.groovy:89)
+at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
+at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:73)
+at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
+at io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1791)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:338)
+at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:274)
+at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1240)
+at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1013)
+at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:798)
+at groovy.lang.GroovyObject.invokeMethod(GroovyObject.java:39)
+at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
+at io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1797)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:338)
+at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:274)
+at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1240)
+at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1013)
+at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:798)
+at groovy.lang.GroovyObject.invokeMethod(GroovyObject.java:39)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:338)
+at org.codehaus.groovy.runtime.metaclass.TransformMetaMethod.invoke(TransformMetaMethod.java:59)
+at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass$1.invoke(ClosureMetaClass.java:217)
+at org.codehaus.groovy.runtime.metaclass.TransformMetaMethod.doMethodInvoke(TransformMetaMethod.java:66)
+at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:318)
+at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
+at io.restassured.internal.RequestSpecificationImpl$_put_closure3.doCall(RequestSpecificationImpl.groovy:186)
+at io.restassured.internal.RequestSpecificationImpl$_put_closure3.doCall(RequestSpecificationImpl.groovy)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:338)
+at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:274)
+at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:270)
+at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1013)
+at groovy.lang.Closure.call(Closure.java:471)
+at org.codehaus.groovy.runtime.ConvertedClosure.invokeCustom(ConvertedClosure.java:54)
+at org.codehaus.groovy.runtime.ConversionHandler.invoke(ConversionHandler.java:114)
+at jdk.proxy1/jdk.proxy1.$Proxy27.get(Unknown Source)
+at io.restassured.internal.assertbridge.GroovyAssertBridge.runWithUnwrap(GroovyAssertBridge.java:46)
+at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
+at io.restassured.internal.RequestSpecificationImpl.put(RequestSpecificationImpl.groovy:185)
+at io.restassured.internal.RequestSpecificationImpl.put(RequestSpecificationImpl.groovy)
+at api.endpoints.UserEndpoints.updateUser(UserEndpoints.java:48)
+at api.test.UserTest.testUpdateUserbyName(UserTest.java:63)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+at org.testng.TestRunner.privateRun(TestRunner.java:744)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.net.UnknownHostException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUpdateUserbyName -->
+        <test-method signature="testDeleteUser()[pri:4, instance:api.test.UserTest@512baff6]" started-at="2026-07-09T19:09:41 IST" name="testDeleteUser" finished-at="2026-07-09T19:09:41 IST" duration-ms="55" status="FAIL">
+          <exception class="java.net.UnknownHostException">
+            <message>
+              <![CDATA[petstore.swagger.io]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.net.UnknownHostException: petstore.swagger.io
+at java.base/java.net.InetAddress$CachedLookup.get(InetAddress.java:909)
+at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1702)
+at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1582)
+at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+at org.apache.http.impl.conn.DefaultClientConnectionOperator.resolveHostname(DefaultClientConnectionOperator.java:263)
+at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:162)
+at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:326)
+at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:605)
+at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:440)
+at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835)
+at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+at io.restassured.internal.RestAssuredHttpBuilder.doRequest(RestAssuredHttpBuilder.java:141)
+at io.restassured.internal.http.HTTPBuilder.doRequest(HTTPBuilder.java:496)
+at io.restassured.internal.http.HTTPBuilder.request(HTTPBuilder.java:453)
+at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
+at io.restassured.internal.RequestSpecificationImpl.sendHttpRequest(RequestSpecificationImpl.groovy:1567)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:338)
+at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:274)
+at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1240)
+at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1013)
+at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:798)
+at groovy.lang.GroovyObject.invokeMethod(GroovyObject.java:39)
+at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
+at io.restassured.internal.RequestSpecificationImpl.sendRequest(RequestSpecificationImpl.groovy:1316)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:338)
+at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:274)
+at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1240)
+at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1013)
+at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:798)
+at groovy.lang.GroovyObject.invokeMethod(GroovyObject.java:39)
+at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
+at io.restassured.internal.filter.SendRequestFilter.filter(SendRequestFilter.groovy:30)
+at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
+at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:73)
+at io.restassured.filter.time.TimingFilter.filter(TimingFilter.java:56)
+at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
+at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:73)
+at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
+at io.restassured.internal.filter.CsrfFilter.filter(CsrfFilter.groovy:89)
+at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
+at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:73)
+at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
+at io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1791)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:338)
+at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:274)
+at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1240)
+at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1013)
+at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:798)
+at groovy.lang.GroovyObject.invokeMethod(GroovyObject.java:39)
+at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
+at io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1797)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:338)
+at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:274)
+at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1240)
+at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1013)
+at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:798)
+at groovy.lang.GroovyObject.invokeMethod(GroovyObject.java:39)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:338)
+at org.codehaus.groovy.runtime.metaclass.TransformMetaMethod.invoke(TransformMetaMethod.java:59)
+at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass$1.invoke(ClosureMetaClass.java:217)
+at org.codehaus.groovy.runtime.metaclass.TransformMetaMethod.doMethodInvoke(TransformMetaMethod.java:66)
+at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:318)
+at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
+at io.restassured.internal.RequestSpecificationImpl$_delete_closure4.doCall(RequestSpecificationImpl.groovy:192)
+at io.restassured.internal.RequestSpecificationImpl$_delete_closure4.doCall(RequestSpecificationImpl.groovy)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:338)
+at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:274)
+at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:270)
+at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1013)
+at groovy.lang.Closure.call(Closure.java:471)
+at org.codehaus.groovy.runtime.ConvertedClosure.invokeCustom(ConvertedClosure.java:54)
+at org.codehaus.groovy.runtime.ConversionHandler.invoke(ConversionHandler.java:114)
+at jdk.proxy1/jdk.proxy1.$Proxy27.get(Unknown Source)
+at io.restassured.internal.assertbridge.GroovyAssertBridge.runWithUnwrap(GroovyAssertBridge.java:46)
+at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
+at io.restassured.internal.RequestSpecificationImpl.delete(RequestSpecificationImpl.groovy:191)
+at io.restassured.internal.RequestSpecificationImpl.delete(RequestSpecificationImpl.groovy)
+at api.endpoints.UserEndpoints.deleteUser(UserEndpoints.java:58)
+at api.test.UserTest.testDeleteUser(UserTest.java:78)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+at org.testng.TestRunner.privateRun(TestRunner.java:744)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.net.UnknownHostException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDeleteUser -->
+      </class> <!-- api.test.UserTest -->
+      <class name="api.test.DDTests">
+        <test-method signature="testPostUser(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:api.test.DDTests@401f7633]" started-at="2026-07-09T18:48:50 IST" name="testPostUser" data-provider="Data" finished-at="2026-07-09T18:49:42 IST" duration-ms="51358" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1001]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[piyush.kumar]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Piyush]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Kumar]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[piyush.kumar@example.com]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[P@ssw0rd!123]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[9876543210]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPostUser -->
+        <test-method signature="testPostUser(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:api.test.DDTests@401f7633]" started-at="2026-07-09T18:49:42 IST" name="testPostUser" data-provider="Data" finished-at="2026-07-09T18:50:26 IST" duration-ms="43934" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1002]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[aisha.sharma]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Aisha]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Sharma]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[aisha.sharma@example.com]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Secure@456]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[9123456780]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPostUser -->
+        <test-method signature="testPostUser(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:api.test.DDTests@401f7633]" started-at="2026-07-09T18:50:26 IST" name="testPostUser" data-provider="Data" finished-at="2026-07-09T18:51:10 IST" duration-ms="44273" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1003]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[rohan.verma]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Rohan]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Verma]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[rohan.verma@example.com]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Test#7890]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[9988776655]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPostUser -->
+        <test-method signature="testPostUser(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:api.test.DDTests@401f7633]" started-at="2026-07-09T18:51:10 IST" name="testPostUser" data-provider="Data" finished-at="2026-07-09T18:51:54 IST" duration-ms="43926" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1004]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[neha.gupta]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Neha]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Gupta]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[neha.gupta@example.com]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Welcome@2026]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[9090909090]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPostUser -->
+        <test-method signature="testPostUser(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:api.test.DDTests@401f7633]" started-at="2026-07-09T18:51:54 IST" name="testPostUser" data-provider="Data" finished-at="2026-07-09T18:52:39 IST" duration-ms="45442" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1005]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[arjun.mehta]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Arjun]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Mehta]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[arjun.mehta@example.com]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Demo$Pass55]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[9812345678]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPostUser -->
+        <test-method signature="testDeleteuser(java.lang.String)[pri:2, instance:api.test.DDTests@401f7633]" started-at="2026-07-09T18:52:39 IST" name="testDeleteuser" data-provider="UserNames" finished-at="2026-07-09T18:53:24 IST" duration-ms="44471" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[piyush.kumar]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDeleteuser -->
+        <test-method signature="testDeleteuser(java.lang.String)[pri:2, instance:api.test.DDTests@401f7633]" started-at="2026-07-09T18:53:24 IST" name="testDeleteuser" data-provider="UserNames" finished-at="2026-07-09T18:54:09 IST" duration-ms="44739" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[aisha.sharma]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDeleteuser -->
+        <test-method signature="testDeleteuser(java.lang.String)[pri:2, instance:api.test.DDTests@401f7633]" started-at="2026-07-09T18:54:09 IST" name="testDeleteuser" data-provider="UserNames" finished-at="2026-07-09T18:54:53 IST" duration-ms="44759" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[rohan.verma]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDeleteuser -->
+        <test-method signature="testDeleteuser(java.lang.String)[pri:2, instance:api.test.DDTests@401f7633]" started-at="2026-07-09T18:54:53 IST" name="testDeleteuser" data-provider="UserNames" finished-at="2026-07-09T19:09:39 IST" duration-ms="885815" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[neha.gupta]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.net.UnknownHostException">
+            <message>
+              <![CDATA[No such host is known (petstore.swagger.io)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.net.UnknownHostException: No such host is known (petstore.swagger.io)
+at java.base/java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+at java.base/java.net.Inet6AddressImpl.lookupAllHostAddr(Inet6AddressImpl.java:52)
+at java.base/java.net.InetAddress$PlatformResolver.lookupByName(InetAddress.java:1134)
+at java.base/java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1712)
+at java.base/java.net.InetAddress$NameServiceAddresses.get(InetAddress.java:1060)
+at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1702)
+at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1582)
+at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+at org.apache.http.impl.conn.DefaultClientConnectionOperator.resolveHostname(DefaultClientConnectionOperator.java:263)
+at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:162)
+at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:326)
+at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:605)
+at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:440)
+at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835)
+at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+at io.restassured.internal.RestAssuredHttpBuilder.doRequest(RestAssuredHttpBuilder.java:141)
+at io.restassured.internal.http.HTTPBuilder.doRequest(HTTPBuilder.java:496)
+at io.restassured.internal.http.HTTPBuilder.request(HTTPBuilder.java:453)
+at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
+at io.restassured.internal.RequestSpecificationImpl.sendHttpRequest(RequestSpecificationImpl.groovy:1567)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:338)
+at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:274)
+at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1240)
+at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1013)
+at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:798)
+at groovy.lang.GroovyObject.invokeMethod(GroovyObject.java:39)
+at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
+at io.restassured.internal.RequestSpecificationImpl.sendRequest(RequestSpecificationImpl.groovy:1316)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:338)
+at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:274)
+at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1240)
+at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1013)
+at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:798)
+at groovy.lang.GroovyObject.invokeMethod(GroovyObject.java:39)
+at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
+at io.restassured.internal.filter.SendRequestFilter.filter(SendRequestFilter.groovy:30)
+at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
+at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:73)
+at io.restassured.filter.time.TimingFilter.filter(TimingFilter.java:56)
+at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
+at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:73)
+at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
+at io.restassured.internal.filter.CsrfFilter.filter(CsrfFilter.groovy:89)
+at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
+at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:73)
+at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
+at io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1791)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:338)
+at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:274)
+at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1240)
+at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1013)
+at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:798)
+at groovy.lang.GroovyObject.invokeMethod(GroovyObject.java:39)
+at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
+at io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1797)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:338)
+at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:274)
+at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1240)
+at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1013)
+at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:798)
+at groovy.lang.GroovyObject.invokeMethod(GroovyObject.java:39)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:338)
+at org.codehaus.groovy.runtime.metaclass.TransformMetaMethod.invoke(TransformMetaMethod.java:59)
+at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass$1.invoke(ClosureMetaClass.java:217)
+at org.codehaus.groovy.runtime.metaclass.TransformMetaMethod.doMethodInvoke(TransformMetaMethod.java:66)
+at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:318)
+at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
+at io.restassured.internal.RequestSpecificationImpl$_delete_closure4.doCall(RequestSpecificationImpl.groovy:192)
+at io.restassured.internal.RequestSpecificationImpl$_delete_closure4.doCall(RequestSpecificationImpl.groovy)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:338)
+at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:274)
+at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:270)
+at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1013)
+at groovy.lang.Closure.call(Closure.java:471)
+at org.codehaus.groovy.runtime.ConvertedClosure.invokeCustom(ConvertedClosure.java:54)
+at org.codehaus.groovy.runtime.ConversionHandler.invoke(ConversionHandler.java:114)
+at jdk.proxy1/jdk.proxy1.$Proxy27.get(Unknown Source)
+at io.restassured.internal.assertbridge.GroovyAssertBridge.runWithUnwrap(GroovyAssertBridge.java:46)
+at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
+at io.restassured.internal.RequestSpecificationImpl.delete(RequestSpecificationImpl.groovy:191)
+at io.restassured.internal.RequestSpecificationImpl.delete(RequestSpecificationImpl.groovy)
+at api.endpoints.UserEndpoints.deleteUser(UserEndpoints.java:58)
+at api.test.DDTests.testDeleteuser(DDTests.java:39)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+at org.testng.TestRunner.privateRun(TestRunner.java:744)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.net.UnknownHostException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDeleteuser -->
+        <test-method signature="testDeleteuser(java.lang.String)[pri:2, instance:api.test.DDTests@401f7633]" started-at="2026-07-09T19:09:39 IST" name="testDeleteuser" data-provider="UserNames" finished-at="2026-07-09T19:09:39 IST" duration-ms="136" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[arjun.mehta]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.net.UnknownHostException">
+            <message>
+              <![CDATA[petstore.swagger.io]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.net.UnknownHostException: petstore.swagger.io
+at java.base/java.net.InetAddress$CachedLookup.get(InetAddress.java:909)
+at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1702)
+at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1582)
+at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+at org.apache.http.impl.conn.DefaultClientConnectionOperator.resolveHostname(DefaultClientConnectionOperator.java:263)
+at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:162)
+at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:326)
+at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:605)
+at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:440)
+at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835)
+at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+at io.restassured.internal.RestAssuredHttpBuilder.doRequest(RestAssuredHttpBuilder.java:141)
+at io.restassured.internal.http.HTTPBuilder.doRequest(HTTPBuilder.java:496)
+at io.restassured.internal.http.HTTPBuilder.request(HTTPBuilder.java:453)
+at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
+at io.restassured.internal.RequestSpecificationImpl.sendHttpRequest(RequestSpecificationImpl.groovy:1567)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:338)
+at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:274)
+at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1240)
+at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1013)
+at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:798)
+at groovy.lang.GroovyObject.invokeMethod(GroovyObject.java:39)
+at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
+at io.restassured.internal.RequestSpecificationImpl.sendRequest(RequestSpecificationImpl.groovy:1316)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:338)
+at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:274)
+at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1240)
+at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1013)
+at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:798)
+at groovy.lang.GroovyObject.invokeMethod(GroovyObject.java:39)
+at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
+at io.restassured.internal.filter.SendRequestFilter.filter(SendRequestFilter.groovy:30)
+at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
+at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:73)
+at io.restassured.filter.time.TimingFilter.filter(TimingFilter.java:56)
+at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
+at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:73)
+at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
+at io.restassured.internal.filter.CsrfFilter.filter(CsrfFilter.groovy:89)
+at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
+at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:73)
+at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
+at io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1791)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:338)
+at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:274)
+at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1240)
+at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1013)
+at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:798)
+at groovy.lang.GroovyObject.invokeMethod(GroovyObject.java:39)
+at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
+at io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1797)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:338)
+at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:274)
+at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1240)
+at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1013)
+at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:798)
+at groovy.lang.GroovyObject.invokeMethod(GroovyObject.java:39)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:338)
+at org.codehaus.groovy.runtime.metaclass.TransformMetaMethod.invoke(TransformMetaMethod.java:59)
+at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass$1.invoke(ClosureMetaClass.java:217)
+at org.codehaus.groovy.runtime.metaclass.TransformMetaMethod.doMethodInvoke(TransformMetaMethod.java:66)
+at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:318)
+at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
+at io.restassured.internal.RequestSpecificationImpl$_delete_closure4.doCall(RequestSpecificationImpl.groovy:192)
+at io.restassured.internal.RequestSpecificationImpl$_delete_closure4.doCall(RequestSpecificationImpl.groovy)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:338)
+at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:274)
+at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:270)
+at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1013)
+at groovy.lang.Closure.call(Closure.java:471)
+at org.codehaus.groovy.runtime.ConvertedClosure.invokeCustom(ConvertedClosure.java:54)
+at org.codehaus.groovy.runtime.ConversionHandler.invoke(ConversionHandler.java:114)
+at jdk.proxy1/jdk.proxy1.$Proxy27.get(Unknown Source)
+at io.restassured.internal.assertbridge.GroovyAssertBridge.runWithUnwrap(GroovyAssertBridge.java:46)
+at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
+at io.restassured.internal.RequestSpecificationImpl.delete(RequestSpecificationImpl.groovy:191)
+at io.restassured.internal.RequestSpecificationImpl.delete(RequestSpecificationImpl.groovy)
+at api.endpoints.UserEndpoints.deleteUser(UserEndpoints.java:58)
+at api.test.DDTests.testDeleteuser(DDTests.java:39)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+at org.testng.TestRunner.privateRun(TestRunner.java:744)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.net.UnknownHostException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDeleteuser -->
+      </class> <!-- api.test.DDTests -->
+    </test> <!-- C:/Users/piyus/IdeaProjects/RestAssuredLearning/src/test/java/api/test -->
+  </suite> <!-- All Test Suite -->
+</testng-results>

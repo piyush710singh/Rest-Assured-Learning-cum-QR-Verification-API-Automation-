@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: qrverificationapi.AadhaarQrVerificationTest
+-------------------------------------------------------------------------------
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 6, Time elapsed: 18.61 s -- in qrverificationapi.AadhaarQrVerificationTest

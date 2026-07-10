@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+    <Properties>
+        <Property name="LOG_DIR">${sys:user.dir}/src/test/java/logs</Property>
+        <Property name="LOG_FILE">${LOG_DIR}/automation.log</Property>
+        <Property name="LOG_PATTERN">${LOG_DIR}/automation-%d{yyyy-MM-dd}-%i.log.gz</Property>
+        <Property name="LOG_PATTERN_LAYOUT">%d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %-5level %c{1.} - %msg%n</Property>
+    </Properties>
+
+    <Appenders>
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout pattern="${LOG_PATTERN_LAYOUT}"/>
+        </Console>
+
+        <RollingFile name="File"
+                     fileName="${LOG_FILE}"
+                     filePattern="${LOG_PATTERN}">
+            <PatternLayout pattern="${LOG_PATTERN_LAYOUT}"/>
+            <Policies>
+                <SizeBasedTriggeringPolicy size="10 MB"/>
+                <TimeBasedTriggeringPolicy interval="1" modulate="true"/>
+            </Policies>
+            <DefaultRolloverStrategy max="10"/>
+        </RollingFile>
+    </Appenders>
+
+    <Loggers>
+        <Logger name="org.apache" level="warn" additivity="false">
+            <AppenderRef ref="Console"/>
+            <AppenderRef ref="File"/>
+        </Logger>
+
+        <Root level="info">
+            <AppenderRef ref="Console"/>
+            <AppenderRef ref="File"/>
+        </Root>
+    </Loggers>
+</Configuration>
